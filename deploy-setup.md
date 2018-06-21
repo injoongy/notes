@@ -2,14 +2,20 @@
 
 ## Pre-deployment stuff
 (All of this should be happening on your master branch...I think)
+
 1. Make a `public` folder in your `server` directory.
+
 1. In your `server.js` file, add Express middleware - add this line near the top:
   `app.use(express.static('public'));`
+
 1. Go to `package.json` in your `app` directory and add a `copy` script: 
   `"copy": "rm -rf ../server/public && cp -R ./dist ../server/public"`
+
 1. Add another script in your `package.json` in your App directory:
   `"build:server": "npm run build && npm run copy"`
+
 1. Run `npm run build:server` in your `app` directory.
+
 1. Test your app from localhost:3000.
 
 ## Heroku stuff
@@ -17,11 +23,11 @@
 
 1. Go to Resources, search 'postgres' in the Add-Ons search and add the free version.
 
-1. Open up a terminal window and navigate to your `server` directory, and make sure you're on the master branch.
+1. Open up a terminal window and navigate to your `server` directory (make sure you're on the master branch) and login to the Heroku CLI with `heroku login`. 
+    1. (You can go back to your Heroku app page, go to the "Deploy" section, and follow the first instructions for "Deploy using Heroku Git" - ignore the "Create a new Git repository" and just make sure you login to the Heroku CLI.)
 
-1. Login to the Heroku CLI. (You can go back to your Heroku app page, go to the "Deploy" section, and follow the first instructions for "Deploy using Heroku Git" - ignore the "Create a new Git repository" and just make sure you login to the Heroku CLI.)
-
-1. Go into your Server's .env file and comment out (by putting a '#' in front) your DATABASE_URL line and add the Heroku-generated PG config var into there instead of your own DATABASE_URL. (For example, ours was: `DATABASE_URL=postgres://mdtgbjrbjrmhzy:32773b18982f...`)
+1. Go into your Server's .env file and comment out (by putting a '#' in front) your DATABASE_URL line and add the Heroku-generated PG config var into there instead of your own DATABASE_URL.
+    1. For example, ours was: `DATABASE_URL=postgres://mdtgbjrbjrmhzy:32773b18982f...`
 
 1. Also add this line to your .env file as well:
   `PGSSLMODE=require`
