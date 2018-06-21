@@ -43,7 +43,7 @@
 
 * Now, pushing changes using Git still works the same as before. `git push`, etc. all still will interact with your GitHub account. If you ever want to push the changes to Heroku, you will need to execute the `git push heroku master` command. 
 
-* An additional note to the previous bullte point: I found it slightly annoying because VS Code has built-in git tracking features for when you've made changes, but those go away as soon as you push to either Heroku or GitHub - so if you've pushed the most recent changes to Heroku, VS Code's git tracking (the color and icons next to your files in the Explorer sidebar) will disappear. BUT you still need to push these changes to your GitHub!
+* An additional note to the previous bullet point: I found it slightly annoying because VS Code has built-in git tracking features for when you've made changes, but those go away as soon as you push to either Heroku or GitHub - so if you've pushed the most recent changes to Heroku, VS Code's git tracking (the color and icons next to your files in the Explorer sidebar) will disappear. BUT you still need to push these changes to your GitHub!
 
 
 <!-- 1. Once done, go back to Settings and look at your config vars for your PGSQL. -->
