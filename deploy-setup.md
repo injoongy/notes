@@ -23,9 +23,6 @@
 
 1. Go to Resources, search 'postgres' in the Add-Ons search and add the free version.
 
-1. Open up a terminal window and navigate to your `server` directory (make sure you're on the master branch) and login to the Heroku CLI with `heroku login`. 
-    1. (You can go back to your Heroku app page, go to the "Deploy" section, and follow the first instructions for "Deploy using Heroku Git" - ignore the "Create a new Git repository" and just make sure you login to the Heroku CLI.)
-
 1. Go into your Heroku app page and to your Settings section, select "Reveal Config vars", and copy the value for "HEROKU_POSTGRESQL_GRAY_URL".
 
 1. Go into your Server's .env file and comment out (by putting a '#' in front) your DATABASE_URL line. Add a new `DATABASE_URL` and paste the value for the "HEROKU_POSTGRESQL_GRAY_URL" into there instead of your own DATABASE_URL.
@@ -33,6 +30,9 @@
 
 1. Also add this line to your .env file as well:
   `PGSSLMODE=require`
+
+1. Open up a terminal window and navigate to your `server` directory (make sure you're on the master branch) and login to the Heroku CLI with `heroku login`. 
+    1. (You can go back to your Heroku app page, go to the "Deploy" section, and follow the first instructions for "Deploy using Heroku Git" - ignore the "Create a new Git repository" and just make sure you login to the Heroku CLI.)
 
 1. In your Server directory in your terminal, run the command `heroku pg` to connect to your PGSQL database in Heroku.
 
