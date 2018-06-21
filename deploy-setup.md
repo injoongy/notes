@@ -28,7 +28,7 @@
 
 1. Go into your Heroku app page and to your Settings section, select "Reveal Config vars", and copy the value for "HEROKU_POSTGRESQL_GRAY_URL".
 
-1. Go into your Server's .env file and comment out (by putting a '#' in front) your DATABASE_URL line and paste the value for the "HEROKU_POSTGRESQL_GRAY_URL" into there instead of your own DATABASE_URL.
+1. Go into your Server's .env file and comment out (by putting a '#' in front) your DATABASE_URL line. Add a new `DATABASE_URL` and paste the value for the "HEROKU_POSTGRESQL_GRAY_URL" into there instead of your own DATABASE_URL.
     1. For example, ours was: `DATABASE_URL=postgres://mdtgbjrbjrmhzy:32773b18982f...`
 
 1. Also add this line to your .env file as well:
