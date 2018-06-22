@@ -18,6 +18,8 @@
 
 1. Test your app from localhost:3000.
 
+1. Don't forget to set up your proxies!!! Add vue.config.js in the root of your `app` directory, add the necessary code in there, and remove the code from your api.js!
+
 ## Heroku stuff
 1. Go to Heroku and create a new app - ignore pipelines.
 
