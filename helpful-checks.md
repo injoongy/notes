@@ -8,7 +8,7 @@ What do you do?
 Well, before you really go into a panic and dive head first into the deep end of your code, here are some basic things to check for.
 
 ## Some basic things to check for
-1. DID YOU ADD A PROXY TO YOUR WEBPACK
+1. **DID YOU ADD A PROXY TO YOUR WEBPACK**
 
    Go to your `webpack.config.js` and add these three simple lines into your `devServer` object, right under `historyApiFallback: true`.
      ```js
@@ -18,15 +18,15 @@ Well, before you really go into a panic and dive head first into the deep end of
      ```
    You can thank me later.
 
-1. DID YOU ADD A PROXY TO YOUR WEBPACK
+1. **DID YOU ADD A PROXY TO YOUR WEBPACK**
 
    ...did you, though?
 
-1. Is your server running?
+1. **Is your server running?**
 
    Probably not a bad idea. Go to your server directory, and run `node server.js`. Are there any errors there?
 
-1. Is your MongoDB running?
+1. **Is your MongoDB running?**
 
    Go to your server directory and run `gomongo`, or whatever alias you have for starting up your MongoDB instance. Then restart your server.
 
