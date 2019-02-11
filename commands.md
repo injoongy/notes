@@ -19,3 +19,9 @@ This will display a scrollable history of all the comamnds you've entered into y
 `Ctrl-R`
 
 Entering this keyboard shortcut inside your terminal window will allow you to quickly search through your terminal history. Very handy if you're looking for a very old command you entered into terminal.
+
+### Other Notes
+
+* If you have trouble with npm access issues, try deleting your `.npmrc`.
+
+* If your VS Code git features aren't working, make sure that you've opened the project you're working on in VS Code at the same directory where the `.git` file is located.
